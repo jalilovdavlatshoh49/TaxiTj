@@ -1,11 +1,13 @@
-// src/app/page.tsx
+import Slider from '../components/Slider';
+import DriverButton from '../components/DriverButton';
+import CitySelector from '../components/CitySelector';
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-8">
-      <h1 className="text-4xl font-bold text-blue-600">Салом, ҷаҳон!</h1>
-      <p className="mt-4 text-lg text-gray-700">
-        Лоиҳаи Next.js бо Tailwind CSS ва TypeScript омода аст!
-      </p>
+    <main className="min-h-screen bg-gradient-to-b from-white to-blue-100 text-gray-800 p-6">
+      <Slider />
+      <DriverButton />
+      <CitySelector />
     </main>
   );
 }
